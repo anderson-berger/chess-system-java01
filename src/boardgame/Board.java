@@ -1,13 +1,15 @@
 package boardgame;
 
-public class Position {
-
+public class Board {
+	
 	private int row;
 	private int column;
+	private Piece[][] pieces;
 	
-	public Position(int row, int column) {
+	public Board(int row, int column) {
 		this.row = row;
 		this.column = column;
+		this.pieces = new Piece[row][column];
 	}
 
 	public int getRow() {
@@ -26,9 +28,6 @@ public class Position {
 		this.column = column;
 	}
 	
-	@Override
-	public String toString() {
-		return row + ", " + column;
-	}
 	
+
 }
