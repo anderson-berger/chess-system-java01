@@ -1,9 +1,14 @@
 package application;
 
+import chess.ChessMatch;
+
+
 public class Progran {
 
 	public static void main(String[] args) {
-		System.out.println("Hello word!!!!!");
+
+		ChessMatch chessMatch = new ChessMatch();
+		UI.printBoard(chessMatch.getPieces());
 
 	}
 
